@@ -1,11 +1,8 @@
 import React from 'react';
-import ProductCard from './components/ProductCard'; // Importando o componente do card
-import './App.css'; // Importando estilos gerais do App
+import ProductCard from './components/ProductCard'; 
+import './App.css'; 
 
-// 2. COMPONENTE PRINCIPAL: App
-// Ele contém a lista de produtos e renderiza um ProductCard para cada um.
 function App() {
-  // Array de objetos com os dados dos produtos.
   const products = [
     { id: 1, name: 'Smartphone Pro X', price: 2999.90, description: 'Câmera de 108MP, 256GB de armazenamento e tela AMOLED.', imageUrl: 'https://placehold.co/600x400/3498db/ffffff?text=Smartphone' },
     { id: 2, name: 'Notebook UltraSlim', price: 5499.00, description: 'Processador de última geração, leve e com bateria de longa duração.', imageUrl: 'https://placehold.co/600x400/9b59b6/ffffff?text=Notebook' },
@@ -17,15 +14,13 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1 className="main-title">Nossos Produtos</h1>
+      <h1 className="main-title">Produtos</h1>
       
-      {/* Container para a lista de produtos.
-        Usamos o método .map() para iterar sobre o array 'products'.
-      */}
+      {}
       <div className="product-list">
         {products.map(product => (
           <ProductCard
-            key={product.id} // A 'key' é essencial para o React
+            key={product.id}
             name={product.name}
             price={product.price}
             description={product.description}

@@ -1,50 +1,49 @@
-/* Estilos para o componente ProductCard */
 .product-card {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Garante que a imagem não ultrapasse as bordas arredondadas */
+  overflow: hidden; 
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+  transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
 .product-image {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+  object-fit: cover; 
 }
 
 .product-info {
-  padding: 1.5rem; /* 24px */
-  flex-grow: 1; /* Faz esta div ocupar o espaço restante */
+  padding: 1.5rem;
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
 }
 
 .product-name {
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
   font-weight: bold;
-  color: #1a202c; /* Cinza escuro */
+  color: #1a202c; 
   margin-top: 0;
-  margin-bottom: 0.5rem; /* 8px */
+  margin-bottom: 0.5rem;
 }
 
 .product-description {
-  color: #4a5568; /* Cinza médio */
-  margin-bottom: 1rem; /* 16px */
-  flex-grow: 1; /* Ocupa espaço para alinhar os preços na base */
+  color: #4a5568;
+  margin-bottom: 1rem; 
+  flex-grow: 1; 
 }
 
 .product-price {
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem;
   font-weight: 600;
-  color: #2f855a; /* Verde escuro */
+  color: #2f855a; 
   text-align: right;
-  margin-top: auto; /* Alinha o preço na parte inferior do card */
+  margin-top: auto;
 }

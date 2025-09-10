@@ -6,28 +6,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f7fafc; /* Um cinza bem claro */
+  background-color: #f7fafc; 
   color: #2d3748;
 }
 
-/* Estilos para o componente App */
 .app-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem; /* 32px */
+  padding: 2rem; 
 }
 
 .main-title {
-  font-size: 2.5rem; /* 40px */
+  font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
   color: #1a202c;
-  margin-bottom: 3rem; /* 48px */
+  margin-bottom: 3rem; 
 }
 
 .product-list {
   display: grid;
-  /* Cria colunas responsivas: 1 para telas pequenas, 2 para médias, 3 para grandes */
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem; /* Espaçamento entre os cards */
+  gap: 2rem; 
 }

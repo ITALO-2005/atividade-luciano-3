@@ -1,11 +1,8 @@
 import React from 'react';
-import './ProductCard.css'; // Importando o CSS específico para este componente
+import './ProductCard.css'; 
 
-// 1. COMPONENTE REUTILIZÁVEL: ProductCard
-// Ele recebe as informações do produto via props e as exibe.
 function ProductCard({ name, price, description, imageUrl }) {
   
-  // Formata o preço para o padrão brasileiro (R$)
   const formattedPrice = price.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL',
